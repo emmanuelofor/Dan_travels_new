@@ -1,11 +1,23 @@
-<body background="Files/pic.jpg"
->
-    <center>
-        <h1>About Us</h1>
-        <body> background Attribute</h2>
-          
-        <a href="#">
-            
-        </a>
-    </center>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <style>
+      img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+      filter: blur(5px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blurred background</h1>
+    <img class="background" src="Files/pic.jpg" alt="Aleq">
+    <p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Safari 5.1 and earlier versions.</p>
+  </body>
+</html>
